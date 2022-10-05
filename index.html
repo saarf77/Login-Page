@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin">
+                <form id="form" action="#" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <!-- <i class="fas fa-user"></i> -->
+                        <label for="Username"></label>
+                        <input id="username" type="text" placeholder="Username" />
+                    </div>
+                    <div class="input-field">
+                        <!-- <i class="fas fa-lock"></i> -->
+                        <label for="Password"></label>
+                        <input id="password" type="Password" placeholder="Password" />
+                    </div>
+                    <input onclick="onClickLogin()" type="submit" value="Login" class="btn solid" />
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon faec-icon">
+                            <i class="fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon goo-icon">
+                            <i class="fa-google"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/login.service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
